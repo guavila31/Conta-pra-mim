@@ -1,0 +1,63 @@
+<div class="login" [ngClass]="corpo">
+  <div class="container">
+    <div class="content first-content fundo-branco">
+      <div class="first-column">
+        <h2 class="title title-primary">Seja Bem Vindo</h2>
+        <!-- <p class="description description-primary">To keep connected with us</p>
+        <p class="description description-primary">please login with your personal info</p> -->
+        <button class="btn btn-primary-register" (click)="singIn()">Já possui conta?</button>
+      </div>
+      <div class="second-column">
+        <h2 class="title title-second">create account</h2>
+
+        <p class="description description-second">or use your email for registration:</p>
+        <form class="form">
+          <label class="label-input" for="">
+            <i class="far fa-user icon-modify"></i>
+            <input type="text" placeholder="Name">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input type="email" placeholder="Email">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="fas fa-lock icon-modify"></i>
+            <input type="password" placeholder="Password">
+          </label>
+
+          <button class="btn btn-second" routerLink="main">Cadastrar</button>
+        </form>
+      </div><!-- second column -->
+    </div><!-- first content -->
+    <div class="content second-content fundo-laranja">
+      <div class="first-column">
+        <h2 class="title title-primary">Olá, é novo por aqui?</h2>
+        <!-- <p class="description description-primary">Enter your personal details</p>
+        <p class="description description-primary">and start journey with us</p> -->
+        <button class="btn btn-primary-register" (click)="singIn()">cadastre-se</button>
+      </div>
+      <div class="second-column">
+        <h2 class="title title-second">LOGIN</h2>
+
+        <p class="description description-second">or use your email account:</p>
+        <form class="form">
+
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input type="email" placeholder="Email">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="fas fa-lock icon-modify"></i>
+            <input type="password" placeholder="Password">
+          </label>
+
+          <a class="password" href="#" style="color: #4E6B66; font-weight:bold;">Esqueci minha senha?</a>
+          <button class="btn btn-second" routerLink="main" >login</button>
+        </form>
+      </div><!-- second column -->
+    </div><!-- second-content -->
+  </div>
+</div>
