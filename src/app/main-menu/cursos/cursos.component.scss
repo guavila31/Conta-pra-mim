@@ -51,6 +51,14 @@
       text-transform: uppercase;
       font-size: 0.8rem;
       color: #48473c;
+      a {
+        text-decoration: none;
+        color: #48473c;
+      }
+      a:hover {
+        color: #dc9853;
+        transition: 250ms;
+      }
     }
 
     .curso-descricao {
@@ -61,6 +69,39 @@
       color: #48473c;
       max-height: 3rem;
       overflow: auto;
+    }
+  }
+  .cursos-principal {
+    .curso-img-gr {
+      width: 80%;
+      margin-top: 2rem;
+    }
+    .titulo {
+      margin-top: 2rem;
+      align-items: baseline;
+    }
+    .titulo-principal {
+      color: #48473c;
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        color: #48473c;
+      }
+      a:hover {
+        color: #dc9853;
+        transition: 250ms;
+      }
+    }
+    .detalhe {
+      margin-top: 0.7rem;
+
+      span {
+        color: #48473c;
+        font-size: 0.8rem;
+        font-weight: 400;
+      }
     }
   }
 }
