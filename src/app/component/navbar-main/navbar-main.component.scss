@@ -1,0 +1,24 @@
+nav{
+  height: 8vh;
+}
+.light-orange-color {
+  color: #EBE1C5;
+}
+
+.button {
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 0.5rem 0.6rem;
+  margin-left: auto;
+}
+
+.button-light-orange {
+  background-color: #EBE1C5;
+  color: #595643;
+  border-color: 2px solid #595643;
+}
+
+.button:hover {
+  background-color: #e8d8ab;
+  color: #595643;
+}

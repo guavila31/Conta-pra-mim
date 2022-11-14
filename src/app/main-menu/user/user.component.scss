@@ -1,0 +1,48 @@
+.container {
+  border: 1px solid #48473c3c;
+  border-radius: 15px;
+  height: 100%;
+  background-color: #f1f1f1;
+
+  .title {
+    text-transform: uppercase;
+    color: #48473c;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  mat-label {
+    text-transform: uppercase;
+  }
+
+  .perfil {
+    max-width: 500px;
+    height: 30vh;
+    font-size: 0;
+    text-align: center;
+    div {
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      margin: 10px;
+      width: 13rem;
+      height: 13rem;
+      line-height: 100px;
+      background-color: #EBCC6E;
+      font-size: 40px;
+    }
+  }
+  .usuario{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #48473c;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}

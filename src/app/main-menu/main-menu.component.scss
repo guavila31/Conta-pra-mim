@@ -1,0 +1,40 @@
+body{
+  // background-color: #CCCCCC;
+  background-color: red;
+}
+
+.menu-lateral {
+  height: 75vh;
+  width: 17rem;
+  border-radius: 25px;
+  padding: 15px;
+  background: linear-gradient(
+    105deg,
+    rgba(237, 131, 78, 1) 0%,
+    rgba(220, 152, 83, 1) 100%
+  );
+  .title {
+    display: flex;
+    place-content: center;
+    img{
+      width: 15rem;
+    }
+  }
+  .underline{
+    border-bottom: 2px solid #EBCC6E;
+    margin-top: 1rem;
+  }
+  .title-menu{
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    a{
+      text-decoration: none;
+      color: #EBCC6E;
+    }
+    .link-menu.active{
+      color: #595643;
+    }
+
+  }
+}

@@ -7,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainMenuComponent implements OnInit {
 
-  constructor() { }
+  public active: string;
+
+  menus: any = [
+    { rota: 'dashboard', titulo: 'Painel de controle' },
+    { rota: 'input', titulo: 'movimentação' },
+    { rota: 'usuario', titulo: 'Usuario' },
+    { rota: 'cursos', titulo: 'Cursos' },
+  ]
+  constructor() {
+    this.active = 'menu-active'
+   }
 
   ngOnInit(): void {
   }

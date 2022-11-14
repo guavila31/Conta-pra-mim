@@ -1,0 +1,66 @@
+.container {
+  border: 1px solid #48473c3c;
+  border-radius: 15px;
+  height: 100%;
+  background-color: #f1f1f1;
+
+  .title {
+    text-transform: uppercase;
+    color: #48473c;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .cursos-principal {
+    border: 1px solid rgba(72, 71, 60, 0.2352941176);
+    border-radius: 5px;
+    height: 25vh;
+    width: 60vw;
+    background-color: #e6e6e6;
+  }
+
+  .cursos-item {
+    border: 1px solid rgba(72, 71, 60, 0.2352941176);
+    border-radius: 5px;
+    height: 25vh;
+    background-color: #e6e6e6;
+    border-bottom: 10px solid #4e6b667c;
+
+    .curso-tipo {
+      color: #dc9853;
+      font-weight: 600;
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .curso-img {
+      img {
+        border: 1px solid #48473c31;
+        border-radius: 2px;
+      }
+    }
+
+    .curso-titulo {
+      max-height: 1rem;
+      overflow: hidden;
+      margin-top: 0.4rem;
+      margin-bottom: 0.2rem;
+      border-bottom: 1px solid #48473c2e;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: #48473c;
+    }
+
+    .curso-descricao {
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 0.8rem;
+      color: #48473c;
+      max-height: 3rem;
+      overflow: auto;
+    }
+  }
+}

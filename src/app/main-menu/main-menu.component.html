@@ -1,1 +1,22 @@
-<p>main-menu works!</p>
+<app-navbar-main></app-navbar-main>
+<main>
+  <div class="containter mt-5 mx-5">
+    <div class="row">
+      <!-- inicio menu -->
+      <div class="col-3">
+        <div class="menu-lateral">
+          <div class="title"><img src="../../assets/img/logo-menu.svg" alt="Conta Pra Mim">
+          </div>
+          <div class="underline"></div>
+          <div class="title-menu" *ngFor="let title of menus">
+            <a class="link-menu" [routerLink]="title.rota" routerLinkActive="active" style="text-transform: uppercase;">{{title.titulo}}</a>
+          </div>
+        </div>
+        <!-- Fim menu -->
+      </div>
+      <div class="col-9">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</main>
