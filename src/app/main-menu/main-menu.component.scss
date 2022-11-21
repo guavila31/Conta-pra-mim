@@ -26,7 +26,7 @@ body{
   }
   .title-menu{
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 3rem;
     a{
       text-decoration: none;
@@ -34,6 +34,9 @@ body{
     }
     .link-menu.active{
       color: #595643;
+    }
+    .link-menu{
+      color: #EBCC6E;
     }
 
   }

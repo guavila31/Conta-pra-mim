@@ -9,7 +9,12 @@
           </div>
           <div class="underline"></div>
           <div class="title-menu" *ngFor="let title of menus">
-            <a class="link-menu" [routerLink]="title.rota" routerLinkActive="active" style="text-transform: uppercase;">{{title.titulo}}</a>
+
+            <a class="link-menu" [routerLink]="title.rota" routerLinkActive="active"
+              style="text-transform: uppercase;">
+              <i [ngClass]="title.icone"></i>
+              {{title.titulo}}
+            </a>
           </div>
         </div>
         <!-- Fim menu -->

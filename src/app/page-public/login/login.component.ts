@@ -1,4 +1,7 @@
+import { EsqueciSenhaComponent } from './esqueci-senha/esqueci-senha.component';
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-login',
@@ -8,17 +11,22 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
 
-  // public btnSignin = document.querySelector("#signin");
-  // public btnSignup = document.querySelector("#signup");
-  // public body = document.querySelector("body");
 
   public corpo: string = '';
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
     this.corpo = 'sign-in-js'
   }
 
   ngOnInit(): void {
+  }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(EsqueciSenhaComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
   singIn() {

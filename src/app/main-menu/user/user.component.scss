@@ -33,16 +33,49 @@
       width: 13rem;
       height: 13rem;
       line-height: 100px;
-      background-color: #EBCC6E;
+      background-color: #ebcc6e;
       font-size: 40px;
     }
   }
-  .usuario{
+  .usuario {
     text-transform: uppercase;
     font-weight: 700;
     color: #48473c;
     font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
+  }
+  .btn{
+    text-transform: uppercase;
+  }
+  .botao-primario {
+    background-color: #ebcc6e;
+    color: #4e6b66;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+
+    width: 139px;
+    height: 35px;
+  }
+  .botao-primario:hover {
+    background-color: #ddb849;
+    color: #3f625c;
+    font-weight: 500;
+    transition: 350ms;
+  }
+  .botao-secundario {
+    background: #4e6b66;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    color: #EBE1C5;
+
+    width: 139px;
+    height: 35px;
+  }
+  .botao-secundario:hover {
+    background: #3f625c;
+    color: #ebcc6e;
+    font-weight: 500;
+    transition: 350ms;
   }
 }

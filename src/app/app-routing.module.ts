@@ -1,3 +1,4 @@
+import { EsqueciSenhaComponent } from './page-public/login/esqueci-senha/esqueci-senha.component';
 import { CursosComponent } from './main-menu/cursos/cursos.component';
 import { DashboardComponent } from './main-menu/dashboard/dashboard.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
@@ -8,18 +9,22 @@ import { LandingPageComponent } from './page-public/landing-page/landing-page.co
 import { PagePublicComponent } from './page-public/page-public.component';
 import { InputsComponent } from './main-menu/inputs/inputs.component';
 import { UserComponent } from './main-menu/user/user.component';
+import { PerfilComponent } from './main-menu/perfil/perfil.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/public/home', pathMatch: 'full' },
   { path: 'public', component: PagePublicComponent, children:[
     { path: 'home', component: LandingPageComponent },
-    { path: 'login', component: LoginComponent },
+    { path: 'login', component: LoginComponent, children:[
+      { path: 'esqueci-senha', component: EsqueciSenhaComponent },
+    ] },
   ] },
   { path: 'main', component: MainMenuComponent, children:[
     { path: 'dashboard', component: DashboardComponent },
     { path: 'input', component: InputsComponent },
     { path: 'usuario', component: UserComponent },
     { path: 'cursos', component: CursosComponent },
+    { path: 'perfil', component: PerfilComponent },
   ] },
   { path: '**', redirectTo: '/public/home', pathMatch: 'full'},
 ];

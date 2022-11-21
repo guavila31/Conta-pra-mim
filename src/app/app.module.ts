@@ -22,6 +22,11 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatButtonModule} from '@angular/material/button';
 import { UserComponent } from './main-menu/user/user.component';
 import { CursosComponent } from './main-menu/cursos/cursos.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { EsqueciSenhaComponent } from './page-public/login/esqueci-senha/esqueci-senha.component';
+import { PerfilComponent } from './main-menu/perfil/perfil.component';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -37,6 +42,8 @@ import { CursosComponent } from './main-menu/cursos/cursos.component';
     InputsComponent,
     UserComponent,
     CursosComponent,
+    EsqueciSenhaComponent,
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +56,9 @@ import { CursosComponent } from './main-menu/cursos/cursos.component';
     MatInputModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    MatIconModule,
   ],
   providers: [
   ],
