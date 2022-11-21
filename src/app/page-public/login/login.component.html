@@ -8,23 +8,33 @@
         <button class="btn btn-primary-register" (click)="singIn()">Já possui conta?</button>
       </div>
       <div class="second-column">
-        <h2 class="title title-second">create account</h2>
+        <h2 class="title title-second">Cadastre-se</h2>
 
-        <p class="description description-second">or use your email for registration:</p>
+        <p class="description description-second"></p>
         <form class="form">
           <label class="label-input" for="">
-            <i class="far fa-user icon-modify"></i>
-            <input type="text" placeholder="Name">
+            <i class="bi bi-person-circle" style="color: #595643;margin-right: 0.5rem;"></i>
+            <input type="text" placeholder="Nome">
           </label>
 
           <label class="label-input" for="">
-            <i class="far fa-envelope icon-modify"></i>
+            <i class="bi bi-telephone" style="color: #595643;margin-right: 0.5rem;"></i>
+            <input type="number" placeholder="Telefone">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="bi bi-envelope-at-fill" style="color: #595643;margin-right: 0.5rem;"></i>
             <input type="email" placeholder="Email">
           </label>
 
           <label class="label-input" for="">
-            <i class="fas fa-lock icon-modify"></i>
-            <input type="password" placeholder="Password">
+            <i class="bi bi-lock-fill" style="color: #595643;margin-right: 0.5rem;"></i>
+            <input type="password" placeholder="Senha">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="bi bi-lock-fill" style="color: #595643;margin-right: 0.5rem;"></i>
+            <input type="password" placeholder="Confirmar Senha">
           </label>
 
           <button class="btn btn-second" routerLink="/main/dashboard">Cadastrar</button>
@@ -41,17 +51,17 @@
       <div class="second-column">
         <h2 class="title title-second">LOGIN</h2>
 
-        <p class="description description-second">or use your email account:</p>
+        <p class="description description-second"></p>
         <form class="form">
 
           <label class="label-input" for="">
-            <i class="far fa-envelope icon-modify"></i>
+            <i class="bi bi-envelope-at-fill" style="color: #595643; margin-right: 0.5rem;"></i>
             <input type="email" placeholder="Email">
           </label>
 
           <label class="label-input" for="">
-            <i class="fas fa-lock icon-modify"></i>
-            <input type="password" placeholder="Password">
+            <i class="bi bi-lock-fill" style="color: #595643;margin-right: 0.5rem;"></i>
+            <input type="password" placeholder="Senha">
           </label>
 
           <a class="password" style="color: #4E6B66; font-weight:bold;" (click)="openDialog()">Esqueci minha senha?</a>

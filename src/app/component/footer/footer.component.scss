@@ -1,0 +1,57 @@
+--bs-link-color {
+  color: #4e6b66;
+}
+footer {
+  background-color: #4e6b66;
+  height: 30vh;
+
+  .rodape-info {
+    padding-left: 1rem;
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 0.7rem;
+  }
+  .rodape-sobre {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    line-height: 0.7rem;
+    font-weight: 500;
+    color: #ccc;
+    font-size: 1.3rem;
+    a {
+      font-weight: 500;
+      color: #ebe1c5;
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+    a:hover {
+      color: #ebcc6e;
+      text-decoration: underline;
+    }
+  }
+  .bi {
+    font-size: 2rem;
+    padding: 10px;
+    background: linear-gradient(109.61deg, #ed834e -53.83%, #dc9853 62.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bi:hover {
+    -webkit-text-fill-color: #ead499;
+  }
+  .rodape-frase{
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 2rem;
+
+    background: linear-gradient(109.61deg, #ed834e -53.83%, #dc9853 62.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

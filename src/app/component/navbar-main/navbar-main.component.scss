@@ -1,8 +1,8 @@
-nav{
+nav {
   height: 8vh;
 }
 .light-orange-color {
-  color: #EBE1C5;
+  color: #ebe1c5;
 }
 
 .button {
@@ -13,7 +13,7 @@ nav{
 }
 
 .button-light-orange {
-  background-color: #EBE1C5;
+  background-color: #ebe1c5;
   color: #595643;
   border-color: 2px solid #595643;
 }
@@ -21,4 +21,11 @@ nav{
 .button:hover {
   background-color: #e8d8ab;
   color: #595643;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ebe1c5;
 }

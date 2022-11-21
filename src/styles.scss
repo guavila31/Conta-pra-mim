@@ -1,11 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
-
 @import '~@angular/material/theming';
 @include mat-core();
 
+@font-face {
+  font-family: roboto;
+  src: url("assets/fonts/RobotoCondensed-Regular.ttf") format("opentype");
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'roboto', 'arial', sans-serif;
+}
 
 $my-app-primary: mat-palette($mat-deep-orange);
 $my-app-accent:  mat-palette($mat-yellow, 400);
@@ -15,6 +23,8 @@ $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
 body{
   background-color: #CCCCCC;
+
+  --bs-link-color: #595643;
 }
 
 html, body { height: 100%; }
@@ -23,3 +33,5 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 mat-dialog-container{
   background-color: #4E6B66 !important;
 }
+
+

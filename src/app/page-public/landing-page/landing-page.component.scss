@@ -14,11 +14,12 @@ body {
 }
 
 .home .button {
-  width: 11rem;
-  border-radius: 10px;
-  border: 1px solid #595643;
-  text-decoration: none;
-  height: 3.7rem;
+  width: 10rem;
+  border-radius: 12px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  height: 3.3rem;
   align-items: center;
   place-content: center;
 }
@@ -70,6 +71,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #595643;
+  line-height: 3rem;
 }
 
 .cursos .row .col-8 {

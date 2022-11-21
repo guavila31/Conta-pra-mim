@@ -1,18 +1,28 @@
-nav{
+nav {
   height: 6vh;
 }
 .light-orange-color {
-  color: #EBE1C5;
+  color: #ebe1c5;
+}
+li {
+  a {
+    font-size: 1.7rem;
+  }
+  a:hover {
+    color: #EBCC6E;
+    transition: 300ms;
+  }
 }
 
-.button {
+.botao {
   border-radius: 10px;
-  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
   height: 2rem;
   padding-top: 2px;
 }
 
-.home .button {
+.home .botao {
   width: 11rem;
   border-radius: 10px;
   border: 1px solid #595643;
@@ -22,13 +32,13 @@ nav{
   place-content: center;
 }
 
-.button-light-orange {
-  background-color: #EBE1C5;
+.botao-light-orange {
+  background-color: #ebe1c5;
   color: #595643;
-  border-color: 2px solid #595643;
+  border: none;
 }
 
-.button:hover {
+.botao:hover {
   background-color: #e8d8ab;
   color: #595643;
 }

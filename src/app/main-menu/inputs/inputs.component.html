@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <!-- Inicio Coluna 1 -->
-    <div class="col-6 lucros" style="border-right: 1px solid #48473c1c ;">
+    <div class="col-md-6 lucros" style="border-right: 1px solid #48473c1c ;">
       <div class="title mb-5">Lucros</div>
       <mat-form-field appearance="standard">
         <mat-label>CATEGORIA</mat-label>
@@ -16,7 +16,7 @@
       <mat-form-field hintLabel="Max 20 caracteres" appearance="standard">
         <mat-label>DESCRIÇÃO</mat-label>
         <input matInput #input maxlength="10" placeholder="Ex. mão de obra">
-        <mat-hint align="end">{{input.value?.length || 0}}/20</mat-hint>
+        <mat-hint>{{input.value.length || 0}}/20</mat-hint>
       </mat-form-field>
 
       <mat-form-field appearance="standard">
@@ -24,18 +24,18 @@
         <input matInput #input type="number" maxlength="10" placeholder="10">
       </mat-form-field>
 
-        <mat-form-field appearance="standard" class="example-form-field">
-          <mat-label>DATA DA VENDA</mat-label>
-          <input matInput [matDatepicker]="datepicker">
-          <mat-hint>MM/DD/YYYY</mat-hint>
-          <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
-          <mat-datepicker #datepicker>
-            <mat-datepicker-actions>
-              <button mat-button matDatepickerCancel>Cancelar</button>
-              <button mat-raised-button color="primary" matDatepickerApply>Aplicar</button>
-            </mat-datepicker-actions>
-          </mat-datepicker>
-        </mat-form-field>
+      <mat-form-field appearance="standard" class="example-form-field">
+        <mat-label>DATA DA VENDA</mat-label>
+        <input matInput [matDatepicker]="datepicker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+        <mat-datepicker #datepicker>
+          <mat-datepicker-actions>
+            <button mat-button matDatepickerCancel>Cancelar</button>
+            <button mat-raised-button color="primary" matDatepickerApply>Aplicar</button>
+          </mat-datepicker-actions>
+        </mat-datepicker>
+      </mat-form-field>
 
       <mat-form-field appearance="standard" floatLabel="always">
         <mat-label>PREÇO UNITARIO</mat-label>
@@ -49,10 +49,8 @@
         <span matPrefix>R$&nbsp;</span>
       </mat-form-field>
     </div>
-    <!-- Fim Coluna 1 -->
 
-    <!-- Inicio Coluna 1 -->
-    <div class="col-6 lucros">
+    <div class="col-md-6 lucros">
       <div class="title mb-5">Gastos</div>
       <mat-form-field appearance="standard">
         <mat-label>CATEGORIA</mat-label>
@@ -67,7 +65,7 @@
       <mat-form-field hintLabel="Max 20 caracteres" appearance="standard">
         <mat-label>DESCRIÇÃO</mat-label>
         <input matInput #input maxlength="10" placeholder="Ex. mão de obra">
-        <mat-hint align="end">{{input.value?.length || 0}}/20</mat-hint>
+        <mat-hint>{{input.value.length || 0}}/20</mat-hint>
       </mat-form-field>
 
       <mat-form-field appearance="standard">
@@ -76,11 +74,11 @@
       </mat-form-field>
 
       <mat-form-field appearance="standard" class="example-form-field">
-        <mat-label>DATA DA VENDA</mat-label>
-        <input matInput [matDatepicker]="datepicker">
+        <mat-label>DATA DO GASTO</mat-label>
+        <input matInput [matDatepicker]="datepickerGasto">
         <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
-        <mat-datepicker #datepicker>
+        <mat-datepicker-toggle matSuffix [for]="datepickerGasto"></mat-datepicker-toggle>
+        <mat-datepicker #datepickerGasto>
           <mat-datepicker-actions>
             <button mat-button matDatepickerCancel>Cancelar</button>
             <button mat-raised-button color="primary" matDatepickerApply>Aplicar</button>
